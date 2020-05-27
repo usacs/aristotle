@@ -1,6 +1,6 @@
 from typing import Optional
 from dataclasses import dataclass
-from enum import Flag
+from enum import Enum
 
 
 class Language(Enum):
