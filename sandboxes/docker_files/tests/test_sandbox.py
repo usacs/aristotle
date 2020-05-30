@@ -17,4 +17,5 @@ class TestSandbox:
                       language="golang",
                       project_root=abspath(join(d_name, "test_go_sample")))
 
-        assert box.parse() == "Hello World!\n"
+        container = box.execute()
+        assert container.attach() == b"Hello World!\n"
